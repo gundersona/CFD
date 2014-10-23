@@ -48,7 +48,65 @@ span.syscmd { color:#B28C00 }
 .footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
 .footer p { margin:0px; }
 
-  </style></head><body><div class="content"><h1>Andrew Gunderson's STAR-CCM+ CFD Experience Summary</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Tube Bank Convective Heat Transfer</a></li><li><a href="#2">Oil Over Water in a Tilted Box</a></li><li><a href="#4">Intake Manifold</a></li><li><a href="#5">Fan in a Tube</a></li><li><a href="#6">Airfoil Analysis</a></li></ul></div><h2>Tube Bank Convective Heat Transfer<a name="1"></a></h2><div><ul><li>volumetric mesh refinement</li><li>periodic boundry conditions</li><li>surface averaged reports</li></ul></div><img vspace="5" hspace="5" src="Tube_bank_convection_scene.jpg" alt=""> <h2>Oil Over Water in a Tilted Box<a name="2"></a></h2><div><ul><li>implicit unsteady</li><li>multiphase mixture</li><li>volume of fluid</li><li>user defined field function</li><li>running in batch mode</li><li>animation using screen captures and GIMP</li></ul></div><img vspace="5" hspace="5" src="cfd_02.png" alt=""> <h2>Intake Manifold<a name="4"></a></h2><div><ul><li>surface wrapper for a complex geometry</li><li>surface repair tools</li><li>quickly modify part geometry to facilitate parametric studies</li><li>volume rendering</li></ul></div><img vspace="5" hspace="5" src="cfd_03.png" alt=""> <h2>Fan in a Tube<a name="5"></a></h2><div><ul><li>multiple regions and interfaces</li><li>rotating regions</li><li>user defined reports</li></ul></div><img vspace="5" hspace="5" src="cfd_04.png" alt=""> <h2>Airfoil Analysis<a name="6"></a></h2><div><ul><li>external flow</li><li>streamline scalar displayer</li><li>force coefficient reports</li></ul></div><img vspace="5" hspace="5" src="cfd_05.png" alt=""> <p class="footer"><br>
+  </style></head><body><div class="content">
+<h1>Andrew Gunderson's STAR-CCM+ CFD Experience Summary</h1>
+<!--introduction--><!--/introduction-->
+<h2>Contents</h2>
+<div><ul>
+<li><a href="#1">Tube Bank Convective Heat Transfer</a></li>
+<li><a href="#2">Oil Over Water in a Tilted Box</a></li>
+<li><a href="#4">Intake Manifold</a></li>
+<li><a href="#5">Fan in a Tube</a></li>
+<li><a href="#6">Airfoil Analysis</a></li>
+</ul></div>
+<h2>Tube Bank Convective Heat Transfer<a name="1"></a></h2>
+<div><ul>
+<li>volumetric mesh refinement</li>
+<li>periodic boundry conditions</li>
+<li>surface averaged reports</li>
+</ul></div>
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/Tube_bank_convection_scene.jpg" alt=""> 
+<h2>Oil Over Water in a Tilted Box<a name="2"></a></h2>
+<div><ul>
+<li>implicit unsteady</li>
+<li>multiphase mixture</li>
+<li>volume of fluid</li>
+<li>user defined field function</li>
+<li>running in batch mode</li>
+<li>animation using screen captures and GIMP</li>
+</ul></div>
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/slosh.gif" alt=""> 
+<h2>Intake Manifold<a name="4"></a></h2>
+<div><ul>
+<li>surface wrapper for a complex geometry</li>
+<li>surface repair tools</li><li>quickly modify part geometry to facilitate parametric studies</li>
+<li>volume rendering</li>
+</ul></div>
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/Intake_Manifold_geometryScene.jpg" alt=""> 
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/Intake_Manifold_scalarScene.jpg" alt="">
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/Intake_Manifold_volumeScene.jpg" alt="">
+<h2>Fan in a Tube<a name="5"></a></h2>
+<div><ul>
+<li>multiple regions and interfaces</li>
+<li>rotating regions</li>
+<li>user defined reports</li>
+</ul></div>
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/Fan.gif" alt=""> 
+<h2>Airfoil Analysis<a name="6"></a></h2>
+<div><ul>
+<li>external flow best practices</li>
+<li>prism layer trailing edge refinement</li>
+<li>force coefficient reports</li>
+</ul></div>
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/S1223.PNG" alt=""> <p class="footer"><br>
+<h2>Fuselage Analysis<a name="7"></a></h2>
+<div><ul>
+<li>streamline scalar displayer animation</li>
+<li>polyhedral mesh expansion control</li>
+<li>spalart-allmaras turbulence model</li>
+</ul></div>
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/liftingFuse_Streamlines_15aoa.gif" alt="">
+<img vspace="5" hspace="5" src="https://raw.githubusercontent.com/gundersona/CFD/master/roundFuse_Streamlines_15aoa.gif" alt="">
       Published with MATLAB&reg; 7.14<br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Andrew Gunderson's STAR-CCM+ CFD Experience Summary
